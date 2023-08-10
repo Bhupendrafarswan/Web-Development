@@ -1,0 +1,87 @@
+<!-- Learning use of float and clear  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 3px solid gray;
+            background-color: rgb(242, 196, 244);
+            width: 1200px;
+            margin: 75px auto;
+        }
+        .item{
+            border: 5px solid black;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: aliceblue;
+        }
+        #fruits{
+            float: left;
+            width: 45%;
+        }
+        #books{
+            float: right;
+            width: 45%;
+
+        }
+        #food{
+            /* float: left; */
+            width: 100;
+            clear: both;      <!-- lift right both overlap na kare isliye Clear both use kiya -->
+        }
+        p,h{
+            text-align: justify;
+        }
+        h2{
+            margin: auto;
+            margin-top: 10px;
+            width: 225px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <H2>Welcome to my site</H2>
+        <div id="fruits" class="item">
+            <h1>Fruits</h1>
+            <p class="para" id="fruitspara">
+                Fruits are a good source of vitamins and minerals, recognized for their role in preventing vitamin C and vitamin A deficiencies.
+                People who incorporate fruits and vegetables as part of a healthy eating pattern have a reduced risk of some chronic diseases.
+                USDA's MyPlate encourages filling half of the plate with fruits and vegetables at mealtimes.
+                Fruits are an important part of a healthy eating pattern and the source of many vital nutrients, including potassium, folate
+                (folic acid), and antioxidants including polyphenols. Fruit such as blueberries, cranberries, strawberries and citrus also
+                contain phytochemicals that are being studied for their added health benefits.  
+            </p>
+        </div>
+
+        <div id="books" class="item">
+            <h1>Books</h1>
+            <p class="para" id="bookspara">
+                Reading books is completely overlooked by most people across the world. Most adults don’t read because they are unconscious
+                about the essence of reading. Countless people stop reading books by the time they complete high school, never to open a book
+                again. Unfortunately, school books are not that informative because formal education is very deficient. Real knowledge
+                is found in bookshops.
+                In this so-called modern world, people get so much involved in most pressing challenges and activities they believe to
+                be interesting. Going to work, browsing the internet, looking for money, decadence, social media, etc.,
+                consume most of people’s time.
+        </div>
+
+        <div id="food" class="item">
+            <center><h1>Food</h1></center>
+            <p class="para" id="foodspara">
+                Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin
+                and contains essential nutrients such as carbohydrates, fats, proteins, vitamins, or minerals.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

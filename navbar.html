@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgb(157, 205, 247);
+            border-radius: 35px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        ul {
+            overflow: auto;
+            /* Because float ki karan sare li ul se bahar aajaige  */
+            overflow: hidden;
+            /* overflow: hidden kause maine sliders ko hide karne ki liye kiya hai  */
+            
+        }
+        .navbar li a{
+            padding: 30px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+        }
+        .navbar li a:hover{
+            color: blue;
+        }
+
+        .search{
+            float: right;
+            margin: 5px 30px;
+            padding: 2px 20px;
+            border-radius: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Services</a></li>
+                <div class="search">
+                    <input type="text" class="search" id="" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

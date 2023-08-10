@@ -1,0 +1,72 @@
+<!-- Styling buttons and links And psuedo selecters  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .containar{
+        border: 2px solid red;
+        background-color: aliceblue;
+        margin: 50px auto;
+        padding: 50px;
+        width: 500px;
+
+    }
+    .btn{
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: blueviolet;
+        background-color: bisque;
+    }
+    a:active{
+        background-color: rgb(82, 248, 82);
+        color: white;
+    }
+    .btn:hover{
+        color: blue;
+        background-color: rgb(191, 236, 57);
+        border: 2px solid black;
+    }
+    /* a:visited{ */
+        /* background-color: rgb(235, 87, 87); */
+    /* } */
+    
+    img{
+        margin: auto;
+        padding: 10px;
+    }
+
+</style>
+<body>
+    <div class="containar" id="cont1">
+        <h1>What is Google</h1>
+        <p> Originally known as BackRub. Google is a search engine that started development in 1996 by Sergey Brin and Larry Page
+           as a research project at Stanford University to find files on the Internet. Larry and Sergey later decided the name of
+           their search engine needed to change and chose Google, which is inspired from the term googol. 
+           The company is headquartered in Mountain View, California.
+        </p>
+        <a href="https://www.google.com/" class="btn" target="_blank">Site link</a>
+        <button class="btn">Contact us</button>
+        <img src="https://img.icons8.com/?size=512&id=fQDK2sCN4Eh1&format=png" alt="Google logo" height="50">
+    </div>
+    
+</body>
+</html>
