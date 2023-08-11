@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(Images/gym_image.jpg);
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            left: 35px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 45%;
+            top: 25px;
+            margin: 15px auto;
+
+
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 20px
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            /* to bring all list in one line use use display inline-block  */
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 30px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+            font-size: 20px;
+
+        }
+
+        .left img {
+            width: 110px;
+            filter: invert(100%);
+            < !-- filter invert is used for inverting the color of image -->
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Source Code Pro', monospace;
+            line-height: 2px;
+            font-size: 20px;
+        }
+
+        .btn {
+            margin: 10px 10px;
+            padding: 4px 15px;
+            color: white;
+            background-color: black;
+            border: 3px solid gray;
+            border-radius: 18px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        .btn:hover {
+            background-color: rgb(94, 99, 97);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 100px 100px;
+            padding: 60px;
+            width: 33%;
+            border-radius: 25px;
+        }
+
+        .forminfo input {
+            font-family: 'Source Code Pro', monospace;
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 2px;
+            border: 3px solid black;
+            margin: 7px auto;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .container button {
+            display: block;
+            width: 25%;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Images/logo.jpg" alt="">
+            <div>ABC</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <BUtton class="btn">Call us </BUtton>
+            <BUtton class="btn">E mail us</BUtton>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>
+            <center>Aesthetics By Calisthenics</center>
+            <center>Join us today</center>
+        </h1>
+        
+        <form action="">
+            <div class="forminfo">
+                <label for="">Name</label>
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="forminfo">
+                <label for="">Age</label>
+                <input type="text" name="" placeholder="Ente Age">
+            </div>
+            <div class="forminfo">
+                <label for="">Gender</label>
+                <input type="text" name="" placeholder="Enter Gender">
+            </div>
+            <div class="forminfo">
+                <label for="">City</label>
+                <input type="text" name="" placeholder="Enter City">
+            </div>
+            <div class="forminfo">
+                <label for="">E-mail id</label>
+                <input type="email" name="" placeholder="Enter Email Id">
+            </div>
+            <div class="forminfo">
+                <label for="">Phone no.</label>
+                <input type="number" name="" placeholder="Enter Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
