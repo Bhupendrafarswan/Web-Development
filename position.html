@@ -1,0 +1,56 @@
+<!-- Positions -> Static(default), relative , absolute ,fixed and sticky  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height: 1000px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            display: inline-block; 
+            /* display: inline-block; -->>> is used to bring all boxes in same line  */     
+        }
+        #box1{
+            position: relative;
+            /* relative matlab relative to its normal pdotion and leaves a gap */
+            top: 50px;
+            left: 50px;
+        }
+        #box2{
+            position: absolute;
+            /* absolute matlab relative to its first parent */
+            top: 10px;
+            left: 150px;
+        }
+        #box3{
+            position: fixed;
+            /* fixed position matlab brawser ki hesab se fix ho jana  */
+            top: 50px;
+            right: 200px;
+        }
+        #box4{
+            position: sticky;
+            /* sticky position me scrool krne pr chepak jaiga  */
+            top: 25px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1 relative</div>
+    <div class="box" id="box2">2 absolute</div>
+    <div class="box" id="box3">3 fixed</div>
+    <div class="box" id="box4">4 sticky</div>
+    </div>
+    
+</body>
+</html>
