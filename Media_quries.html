@@ -1,0 +1,58 @@
+<!-- Media quries are condition based  -->
+<!-- If condition satisfied my the screen then only the particular CSS will apply  on it  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media queries</title>
+    <style>
+        .box {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            display: none;
+            /*kuch show ne hoga display none kr dene se*/
+        }
+
+        @media only screen and (max-width:667px) {
+            #box1 {
+                display: block;
+                background-color: rgb(102, 147, 244);
+            }
+        }
+
+        @media only screen and (min-width: 667px) and (max-width:800px) {
+            #box2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width:1000px) {
+            #box3 {
+                display: block;
+                color: black;
+                background-color: rgb(100, 100, 2);
+            }
+        }
+
+        @media (min-width: 1000px) {
+            #box4 {
+                display: block;
+                background-color: rgb(226, 114, 22);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">This is IPhone </div>
+    <div class="box" id="box2">This is Tablet </div>
+    <div class="box" id="box3">This is Desktop computer </div>
+    <div class="box" id="box4">This is Widescreen computer </div>
+</body>
+
+</html>

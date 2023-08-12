@@ -1,0 +1,53 @@
+<!-- if we want to target any perticular lag or spacific tages in side it use that spacific position   -->
+<!-- for example div li p h1 ( that means it will target only ha which are inside p whic is inside li inside div) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More on selectors</title>
+</head>
+<style>
+    h1 {
+        background-color: aqua;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* if p is directly inside div then this CSS will be applied */
+    div > p{
+        color: rgb(0, 0, 0);
+        background-color: blue;
+        font-weight: bold;
+    }
+
+    /* if p is right after div i.e p is the next sibling of div*/
+    div + p{
+        color: white;
+        background-color: rgb(187, 202, 26);
+    }
+</style>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="class1">
+            <ul>
+                <li class="item">
+                    <p> This is one paragraph inside li</p>
+                </li>
+                <li>this will not get affected</li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+
+</html>
