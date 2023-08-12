@@ -1,0 +1,54 @@
+<!-- Learning Visibility and z-index -->
+<!--  z-index  will work only for position:---- relative, absolute, fixed or sticky  -->
+            <!-- display: none; will hide the element and the space
+            visibility:hidden; will hide the element but will show its empty space -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 5px solid black;
+        }
+
+        #box1 {
+            position: relative;
+            top: 100px;
+            z-index: 20;                                   /* box 1 ka z index box 2 se kam hai to box1 peche chala jaiga  */
+            background-color: rgb(110, 237, 114);
+        }
+
+        #box2 {
+            position: relative;
+            top: 14px;
+            z-index: 30;
+            background-color: red;
+        }
+
+        #box3 {
+            background-color: rgb(148, 148, 243);
+            display: none;
+        }
+
+        #box4 {
+            background-color: rgb(20, 20, 16);
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
