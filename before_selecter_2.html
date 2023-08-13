@@ -1,0 +1,108 @@
+
+<!-- learning Before and after pseudo selector
+::before create the pseudo-element that represents the first child of the selected element.
+::after creates a pseudo-element that is the last child of the selected element.
+It generally used for adding decorative content to an element using the content property -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        /* before pseudo selecter is used */
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900')no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -20;   /* z-index: is pure screen ko agar - kiya hai to peche le jaige  */
+            opacity: 0.4;  
+        }
+
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            font-family: 'Bree Serif', serif;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 50PX;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* section::after {
+            content: "JOIN NOW";
+            font-family: 'Bree Serif', serif; 
+        } */
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .item a:hover{
+            font-size: 25px;
+            color:rgb(203, 200, 200);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Welcome to my World</h1>
+        <p>Hi, I'm Bhupendra and I'm learning web development with this project I'm currently working on a project to
+            create a website for a local business.
+            I'm doing this to gain more experience in web development. I'm excited to see the results of my work. I'm
+            using HTML, CSS, and JavaScript
+            to build the website. It's been a great learning experience so far and I'm looking forward to seeing the
+            final product. I'm confident that
+            this will improve my skills.
+            Thank you for visiting... 
+        </p>
+        <a href="https://www.google.com/">google.com</a>
+    </section>
+</body>
+
+</html>

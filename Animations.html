@@ -1,0 +1,106 @@
+<!-- learning Creating Animations & Keyframes -->
+
+<!-- animation  properties can be set using this shorthand */
+        animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations & Keyframes</title>
+    <style>
+        .container {
+            background-color: rgb(59, 209, 254);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .box {
+            background-color: blue;
+            width: 200px;
+            height: 150px;
+            position: relative;
+            /* we use position relative to make it move on page */
+            animation-name: my_movingbox;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: backwards; */
+            /* farwards means at the and the position of animation remain changed */
+            /* backwords means at the and the position of animation remain unchanged */
+            animation-timing-function: ease-in;
+            /* animation-direction: reverse; */
+
+        }
+
+        @keyframes my_movingbox {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1550px;
+            }
+
+        }
+
+        .box2 {
+            background-color: rgb(71, 213, 92);
+            width: 200px;
+            height: 150px;
+            margin: 100px 0px 0px 0px;
+            position: relative;
+            animation-name: anima_2;
+            animation-duration: 4s;
+            animation-delay: 8s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+
+        @keyframes anima_2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box for animation 1
+        </div>
+    </div>
+    <!-- animation 2  -->
+    <div class="container">
+        <div class="box2">
+            This is a box for animation 2
+        </div>
+    </div>
+</body>
+
+</html>

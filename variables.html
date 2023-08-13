@@ -1,0 +1,48 @@
+<!-- CSS Variables & Custom Properties -->
+<!-- We can create variable  by ‘--’ symbol -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Variables & Custom Properties</title>
+    <style>
+        :root{
+            /* in :root we can make global variable */
+            --primary-color:pink;
+            --sky-color:rgba(39, 122, 210, 0.584);
+            
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+
+        }
+        .box{
+            --box-color:green;                /*initializing variable  */
+            --blue-shadow:blue;
+            border: 2px solid black;
+            margin: 15px 30px;
+            padding: 2px 4px;
+            width: 250px;
+            height: 100px;
+            background-color: var(--box-color);   /*calling  variable in local scope  */
+            box-shadow: 5px 3px var(--blue-shadow);
+        }
+        h2{
+            text-align: center;
+            color: var(--sky-color);              /*calling  global variable  */
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box"> BOX 1</div>
+        <div class="box">BOX 2</div>
+        <div class="box">BOX 3</div>   
+    </div>
+    <h2>Hello i am sky</h2>
+</body>
+</html>
