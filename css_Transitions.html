@@ -1,0 +1,60 @@
+<!-- Creating Transitions in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        body {
+            background-color: rgb(37, 160, 221);
+        }
+
+        #box {
+            display: flex;
+            height: 150px;
+            width: 150px;
+            background-color: orange;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* Transition short hand property in one line {in charo ko ek sath larne ke liye} */
+            /* transition: background-color 1s ease-in-out 2s; */
+
+
+            transition: all 1s ease-in-out .3s; 
+        }
+
+        #box:hover {
+            background-color: green;
+            height: 450px;
+            width: 450px;
+            border-radius: 150px;
+            font-size: 50px;
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS Transition Tutorial</h3>
+    <center>
+        <div class="container">
+            <div id="box">
+                welcome to all
+            </div>
+    </center>
+    </div>
+</body>
+
+</html>

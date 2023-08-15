@@ -1,0 +1,84 @@
+<!-- CSS Grid Creating Layouts Using Grid Template Area -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts Using Grid Template Area</title>
+    <style>
+        .containar {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+        .item {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(206, 109, 251);
+            padding: 5px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containar">
+        <div class="item" id="navbar">
+            <center><h1> This is navigation bar</h1></center>
+            Home login signup contact
+        </div>
+        <div class="item" id="section">
+            <center><h1> This is section</h1></center>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, consequatur incidunt, tenetur
+                dignissimos laboriosam corrupti et similique labore natus aut esse est, eum corporis maiores molestiae
+                quos quisquam perspiciatis quaerat consectetur explicabo velit ut minus quasi quo. Saepe doloribus
+                debitis fugiat, cumque velit, alias nostrum eveniet officia beatae dignissimos et dolorem recusandae
+                ipsum voluptatibus sunt, temporibus eaque enim iste fugit ex id! Sint sequi porro culpa eum repudiandae
+                debitis quis rem iure ad consectetur qui, nihil hic reprehenderit soluta deleniti placeat doloremque id
+                nisi omnis temporibus sit, dolor rerum! Dolor dolores eius quisquam, deleniti eveniet aliquid ipsum
+                repellendus ipsam sint est quia excepturi? Dolor aliquid nemo repudiandae, illo distinctio fuga commodi
+                praesentium hic iusto perferendis suscipit vitae consequatur alias qui mollitia aspernatur illum
+                reprehenderit minus sit tenetur, minima provident, corporis molestiae necessitatibus. Illo optio atque,
+                magni, quia obcaecati enim inventore cumque voluptatem fugiat omnis consequatur? Saepe eius qui, aut
+                voluptate corrupti nemo. Minima similique esse aliquam exercitationem error minus quod magni quia
+                deleniti facere ducimus, temporibus doloremque, odit numquam consectetur saepe atque dicta unde.
+                Doloremque, perferendis. Obcaecati nam soluta dignissimos minima illo nulla, repellendus, possimus
+                aspernatur placeat veritatis corrupti consequuntur, veniam sapiente sunt necessitatibus a. Et voluptate
+                vitae veniam impedit.
+            </p>
+        </div>
+        <div class="item" id="aside">
+            <center><h1> This is aside</h1></center>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta maxime saepe minima rem officiis, neque
+                omnis necessitatibus minus ea! Hic aspernatur fuga reiciendis corporis odit eius explicabo aliquam ipsam
+                obcaecati quam omnis exercitationem voluptatibus voluptate debitis tempore asperiores, praesentium
+                voluptates necessitatibus tempora veritatis accusamus, ut minus? Delectus porro ab quam, dolore a rerum
+                necessitatibus soluta architecto debitis accusamus. Porro mollitia cum adipisci molestias ex? Velit
+                suscipit dolore ut quo beatae nam quas facilis excepturi repellat alias cumque, quam impedit esse fuga
+                quidem aperiam placeat minima. Ipsam atque consequuntur ipsa illo sed porro sit enim, ullam repellendus
+                facere nisi eligendi vel!</p>
+        </div>
+        <div class="item" id="footer">
+            <h6>all copy right reserved</h6>
+        </div>
+    </div>
+</body>
+
+</html>
