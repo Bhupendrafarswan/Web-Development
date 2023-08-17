@@ -1,0 +1,42 @@
+<!-- Strings in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is javascript strings</h1>
+        <div id="content">
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi molestias corrupti dolore minus consequatur
+            cum ratione optio repellat atque, fuga, esse delectus!</p>
+    </div>
+    <script>
+        var string = 'this is ';
+        var name = 'Bhupendra ';
+        var course = 'BCA';
+        var message = 'Hello i am bhupendra';
+        var temp = `${name} is a doing good and he is pursuing ${course}`;
+        console.log(temp);
+        console.log(string + name + message);   // this is concatination
+        var len = name.length;                  // .lenght is used to findstring length 
+        console.log(`Length of name is ${len}`);
+
+        console.log("write this in \n next line");
+        var a = new String("This is a");             // other way to declare a variable
+        console.log(a);
+
+        // how we can dynamically imsert an element using javascript
+        document.getElementById('content').innerHTML = '<h3> This heading is inserted byeusing javascript</h3>'
+
+    </script>
+</body>
+
+</html>

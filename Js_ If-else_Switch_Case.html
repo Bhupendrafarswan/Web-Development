@@ -1,0 +1,79 @@
+<!-- Scope, If-else Conditionals & Switch Case in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, a?
+    </div>
+    <script>
+        var string1 = "This is for  string";
+        var string2 = "This is for string2";
+        console.log(string1);
+        let a = "hello";
+        {
+            let a = "apple";   // let se banaya gaya variable ek perticular block ke scope tak se valid rahega.
+            console.log(a);
+        }
+
+        console.log(a);
+
+        const b = "This cannot be changed";
+        // b = "this will not change a because we have used const for a";
+        console.log(b);
+
+        // if else and else if ----------------------------------
+
+        let age = 18;
+        if (age == 18) {
+            console.log("You can vote now");
+        }
+        else if (age > 18) {
+            console.log("you can vote")
+        }
+        else if (age < 18) {
+            console.log("you can not vote")
+        }
+        else {
+            console.log("enter age properly.......");
+        }
+
+        // switch case ------------------------------------
+
+        switch (5) {
+            case 0:
+                console.log("Sunday");
+                break;
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            case 3:
+                console.log("Wednesday");
+                break;
+            case 4:
+                console.log("Thursday");
+                break;
+            case 5:
+                console.log("Friday");
+                break;
+            case 6:
+                console.log("Saturday");
+            default:
+                console.log("No day today ...hehe");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

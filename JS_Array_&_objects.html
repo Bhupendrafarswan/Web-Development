@@ -1,0 +1,53 @@
+<!-- Arrays & Objects in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="container">hello ..... click on inspect</div>
+    <script>
+
+        //premative data types
+        let myVar1 = 55;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // objects------------------ 
+        let employee = {
+            name: "Bhupendra",
+            salary: 100000,
+            age: 21,
+            city: "Lucknow",
+        }
+        console.log(employee);
+
+
+        // Array -------------------------
+
+        //Array declaration (normal)...
+        // let arr1 = [1, 2, 3, 4 "srting", 'A'];
+
+        // to create array as object...             
+        let names = new Array(10, 100, 30, 60, 20);
+
+        // array as object with some empty values...
+        // let names = new Array(23);
+
+        console.log(names);
+        console.log(names.length);
+        sorted = names.sort();
+        console.log(sorted);
+        names.push("this is pushed at last in array");
+        console.log(names);
+    </script>
+</body>
+
+</html>
