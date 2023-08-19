@@ -1,0 +1,62 @@
+<!-- Functions in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        A JavaScript function is a block of code designed to perform a particular task. <br>
+        A JavaScript function is executed when "something" invokes it (calls it).
+    </div>
+</body>
+<script>
+    console.log("learning Functions:");
+
+    function greet(name, greetText) {
+        console.log(name + "keep going");
+        console.log(greetText + " " + name);
+    }
+
+    let name = "Bhupendra ";
+    let greetText = "Good Morning how are you ";
+    greet(name, greetText);
+
+    // let x = greet(name,greetText);
+    // console.log(x)
+
+
+
+    function sum(a, b, c) {
+        let d = a + b + c;
+        return d;
+        console.log("Function is returned");
+    }
+
+    let a = sum(10, 20, 30);  // calling of function
+    console.log(a);
+
+
+
+    function printall() {
+        console.log("hello");
+        console.log("Hero");
+    }
+
+    printall();
+
+
+    // Function to compute x*y
+    function product(x, y) {
+        return x * y;
+    }
+    console.log(product(10,5));
+
+</script>
+
+</html>

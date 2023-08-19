@@ -1,0 +1,41 @@
+<!-- Interaction - Alert, Prompt, Confirm  in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+
+<body>
+    <div class="container">
+        we are Interaction with user
+    </div>
+
+    <script>
+        //Alert in in-browser JavaScript - Does not return anything
+        alert("Danger to your system");
+
+        // Prompt in javascript
+        let x = prompt("Enter your name", "");
+        console.log("Welcome " + x);
+
+        // Confirm in javascript
+        let deletePost = confirm("Do you really want to delete this post?");
+        console.log(deletePost);              // it will give true and false 
+
+        if (deletePost) {
+            // Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else {
+            // Code to cancel deletion of the post
+            console.log("Your post has not been deleted");
+        }
+
+    </script>
+</body>
+
+</html>

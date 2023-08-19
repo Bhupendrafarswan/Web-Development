@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in javascript</title>
+</head>
+
+<body>
+    <div class="containar">
+        <ul>
+            <h1>JavaScript supports different kinds of loops:</h1>
+            <li>for - loops through a block of code a number of times</li>
+            <li>for/in - loops through the properties of an object</li>
+            <li>for/of - loops through the values of an iterable object</li>
+            <li>while - loops through a block of code while a specified condition is true</li>
+            <li>do/while - also loops through a block of code while a specified condition is true </li>
+        </ul>
+    </div>
+
+    <script>
+        console.log("Lopps");
+
+        // for loop
+        let i = 0;
+        for(i=0; i<5;i++){
+            console.log(i);
+            console.log("hello")
+        }
+
+        // for loop to traverse any array 
+        let arrlist = ["Apple ", "Mango", "Banana", "kivi", "Orange"];
+        for (let index = 0; index < arrlist.length; index++) {
+            console.log(arrlist[index]);
+        }
+
+        // for each loop traverse any array
+        let arr1=['a','e','i','o','u']
+        arr1.forEach(function fun(element){
+            console.log("vovel - " + element);
+        });
+
+        //for of loop traverse any array
+        for (element of arr1){
+            console.log("This is avovel" + element );
+        }
+
+        // lets make an object named school
+        let school = {
+            name: "Bhupendra",
+            class: 12,
+            age: "18",
+            rollno: 1
+        }
+
+        // Use this loop to iterate over objects in JavaScript
+        // for in loop to traverse any object 
+        for (key in school) {
+            console.log(`The ${key} of student is ${school[key]}`);
+        }
+
+        // while loop in javascript 
+        let j = 0;
+        while (j < 5) {
+            console.log(`${j} is less than 5`);
+            j++;
+        }
+
+        // do while loop in javascript
+        let k = 20;
+        do {
+            console.log(`${k} 20 is grater then 10 but this will run atleast once`);
+            k++;
+        } while (k <10);
+
+    </script>
+</body>
+
+</html>

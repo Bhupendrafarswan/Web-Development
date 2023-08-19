@@ -1,0 +1,58 @@
+<!-- Navigating The DOM in Javasrript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>DOM</h1>
+        <p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+        <p> JavaScript can change all the HTML elements ,attributes , CSS styles in the page.</p>
+        <p> JavaScript can remove existing HTML elements and attributes and add new HTML elements and attributes</p>
+        <p>JavaScript can create new HTML events in the page</p>
+    </div>
+    <div class="container" id="main">
+
+        <ul id="nav">
+            <li>Home</li>
+            <li>About us</li>
+            <li>links</li>
+            <li>Notes</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // document.getElementById(); se hum id se kise me html code ko get ya fhir manipulate kar sakte hai.
+        let main =document.getElementById('main');
+        console.log(main);
+
+        let nav =document.getElementById('nav');
+        console.log(nav);
+
+         // we can dynamically change html in your page  (should be used in javascript)
+        // nav.innerHTML="<li>Notes opened</li>"  
+       
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        // DOM manipulation in JS using CSS selecters 
+        let selecter =document.querySelector('.container');
+        console.log("selecter returns ", selecter);
+        
+        let nav1 =document.querySelector('#nav > li');
+        console.log(nav1);
+
+        let navall =document.querySelectorAll('#nav > li');
+        console.log(navall);
+
+    </script>
+</body>
+
+</html>
