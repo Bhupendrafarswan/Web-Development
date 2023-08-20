@@ -1,0 +1,75 @@
+<!-- Date & Time In JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+</head>
+<style>
+    .container {
+        font-size: 25px;
+        background-color: rgb(87, 168, 239);
+        border: 2px solid rgb(251, 0, 255);
+        border-radius: 15px;
+        padding: 30px;
+        margin: 12px;
+        text-align: center;
+    }
+
+    #time {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("learning  date ");
+        let a = new Date();
+        console.log(a);
+
+        let dt = new Date(5000);
+        // from 1970
+        console.log(dt);
+
+        let newDate = new Date("2024-08-19");
+        console.log(newDate)
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds); in this format
+        let newDate1 = new Date(2025, 1, 25, 10, 20, 30, 40);
+        console.log(newDate1);
+
+        let y = newDate.getFullYear();
+        console.log("The year is ", y);
+
+        let d = newDate.getDate();
+        console.log("The date is ", d);
+
+        let m = newDate.getMonth();
+        console.log("The month is ", m);
+
+        let hours = newDate.getHours();
+        console.log("The hours is ", hours);
+
+        newDate.setDate(1);
+        newDate.setMinutes(1);
+        newDate.setHours(1)
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+
+        // ---------------------------------------------------------------------
+
+    </script>
+</body>
+
+</html>

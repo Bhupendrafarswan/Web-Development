@@ -1,0 +1,113 @@
+<!-- Events & Listening to Events in JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .btn {
+            background-color: brown;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 20px 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Events</h1>
+        <p>An event is a signal that something has happened. All DOM nodes generate such signals (but events are not
+            limited to DOM).</p>
+        <span id="content">1. Mouse events
+            click
+            dblclick
+            mousemove
+            mouseover
+            mousewheel
+            mouseout
+            contextmenu
+            mousedown
+            mouseup
+
+            2. Touch events
+            touchstart
+            touchmove
+            touchend
+            touchcancel
+
+            3. Keyboard events
+            keydown
+            keypress
+            keyup
+
+            4. Form events
+            focus
+            blur
+            change
+            submit
+
+            5. Window events
+            scroll
+            resize
+            hashchange
+            load
+            unload
+
+            <p id="pera">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aliquam officia esse quod
+                beatae?
+                Architecto exercitationem mollitia ipsam? Rerum qui, unde veritatis libero eius quibusdam perferendis
+                ipsam,
+                consequuntur, eos dolore earum quos labore? Nobis dolorum quae natus, nulla et eaque nisi accusantium
+                asperiores cupiditate sed doloremque ipsam repudiandae ex animi praesentium ad iste iusto? Numquam!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptate autem incidunt veniam similique
+                natus molestiae. Voluptate, nemo excepturi nisi, mollitia autem voluptas molestias assumenda pariatur
+                quaerat odit placeat, iure itaque ullam. Eum quis fuga natus perferendis. Libero unde in aperiam
+                inventore
+                ducimus laboriosam ipsum saepe quidem, eveniet recusandae excepturi ipsam ratione reprehenderit corporis
+                ipsa dignissimos ab labore totam tempora omnis rerum nulla dolor? Molestiae ipsum beatae aut, labore rem
+                accusantium velit. Ea iure sapiente ex necessitatibus, nihil non, provident modi, aliquid cum facilis
+                dolores. Illum dolorum eveniet iusto ratione labore ex? Magnam sint obcaecati quia itaque mollitia
+                cupiditate modi eos esse nihil sunt incidunt quas, reprehenderit eveniet, molestias quam tempore sit,
+                sequi
+                atque quod culpa sed voluptatibus sapiente nam? Accusamus recusandae quibusdam laborum tempore ut,
+                minima
+                magnam numquam aliquid ipsum non optio quas iste magni nisi esse nam omnis ad ducimus eos laboriosam!
+                Eligendi, molestiae. Quisquam, facere delectus. Fuga omnis facere officia quae porro sunt, ullam dolorum
+                eveniet aspernatur dolores ipsa deleniti laborum asperiores saepe sed atque suscipit voluptates,
+                consequuntur est nulla odit quibusdam? Tenetur molestiae quae minus! Natus, corporis! Expedita ipsam
+                officiis odio consectetur a, at facere quidem magnam numquam laudantium porro eaque voluptatem voluptate
+                esse? Error, ad.
+            </p>
+        </span><br>
+        <button class="btn" onclick="hide()"> Hide / Show</button>
+    </div>
+
+    <script>
+        function hide() {
+            let btn = document.getElementById('btn');
+            let pera = document.getElementById('pera');
+            if(pera.style.display != 'none'){
+                pera.style.display = 'none';
+            }
+            else{
+                pera.style.display = 'block';
+            }
+        }
+
+        // event listner 
+        let cont1 = document.getElementById('content');
+        cont1.addEventListener('mouseover', function run(){
+            console.log("mouse now inside pera1")
+        });
+
+    </script>
+</body>
+
+</html>
