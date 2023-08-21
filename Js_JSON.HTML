@@ -1,0 +1,71 @@
+<!-- Working with JSON in JavaScript  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Object Notation ( JSON )</h1>
+    </div>
+    <div class="contant">
+        <p>
+            JSON is a lightweight data-interchange format. it is plain text written in JavaScript object notation.
+            JSON is used to send data between computers.
+        </p>
+        <p>
+            The JSON format is syntactically similar to the code for creating JavaScript objects. Because of this, a
+            JavaScript program can easily convert JSON data into JavaScript objects.
+
+            Since the format is text only, JSON data can easily be sent between computers, and used by any programming
+            language.
+
+        <p>JavaScript has a built in function for converting JSON strings into JavaScript objects:
+
+            <b>JSON.parse()</b> <br>
+
+            JavaScript also has a built in function for converting an object into a JSON string:
+
+            <b>JSON.stringify()</b>
+        </p>
+
+        </p>
+    </div>
+
+    
+    <script>
+        let jsonObj = {
+            name: "Bhupendra",
+            age: 22,
+            City: "Lucknow",
+            State: "UP",
+        }
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('UP', 'uttar pradesh');
+        console.log(myJsonStr);
+
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+
+    </script>
+</body>
+
+</html>
